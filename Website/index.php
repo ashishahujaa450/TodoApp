@@ -29,10 +29,10 @@
 		 <!--pick me from here-->
         <!--index page view (html) code start here you can put it according to your adjustment-->
 
-        <main class="main container">
+        <main class="main container mt-5 pt-5">
             <div class="row justify-content-center">
                 <div class="col col-sm-7">
-                    <div class="content-block w-100 my-5 row text-center">
+                    <div class="content-block w-100 row text-center">
                         <div class="col-6 login-form px-5 py-5">
                             <h3 class="font-1">Todo App</h3>
 
