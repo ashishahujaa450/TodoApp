@@ -128,4 +128,9 @@
   font-size: 1rem;
 }
 
+/*// helper classes*/
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,17 @@
 <?php
+    session_start();
+
+    if(!isset($_SESSION['user_d']) || empty($_SESSION['user_d'])) {
+        header("location: ../index.php");
+    }
+
 	require_once("../controller/attachments.php");
 	$loader = new Loader();
+
+    $PIC = $_SESSION['user_d']['pic_loc'];
+    $NAME = $_SESSION['user_d']['name'];
+    $ID = $_SESSION['user_d']['id'];
+    $EMAIL = $_SESSION['user_d']['email'];
 ?>
 
 <!doctype html>
@@ -10,9 +21,6 @@
         <?php $loader->head_load(); ?>
     </head>
     <body>
-       
-       <!-- external js libs -->
-       <script src="../public/js/bootstrap.js"></script>
 		
 		 <!--pick me from here-->
         <!--index page view (html) code start here you can put it according to your adjustment-->
@@ -29,7 +37,7 @@
                         </div><!--end col 8-->
 
                         <div class="col-4">
-                            <p class="text-muted mb-0"><img src="../public/images/user.png" alt=""> Hi, Crakers <i class="fa fa-power-off"></i></p>
+                            <p class="text-muted mb-0"><img src="<?php echo $PIC; ?>" alt="USER IMAGE"> Hi, <?php echo $NAME; ?> <a href="../controller/reqhandler.php?type=logout"><i class="fa fa-power-off"></i></a></p>
                         </div><!--end col 4-->   
                     </div><!--end profile header block-->
 

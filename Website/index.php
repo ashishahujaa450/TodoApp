@@ -20,7 +20,7 @@
                         <div class="col-6 login-form px-5 py-5">
                             <h3 class="font-1">Todo App</h3>
 
-                            <form action="#" method="post">
+                            <form action="controller/reqHandler.php?type=login" method="post">
 
                                 <div class="form-group mt-5">
                                     <label for="email" class="sr-only">Email</label>
@@ -28,7 +28,7 @@
 
                                        <div class="input-group-addon rounded-0"><i class="fa fa-envelope"></i></div>
 
-                                        <input type="email" class="form-control rounded-0" id="email" placeholder="Email Address">
+                                        <input type="email" class="form-control rounded-0" id="userloginemail"  name="userloginemail" placeholder="Email Address">
 
                                    </div><!--end input group-->
                                 </div><!--end form group-->
@@ -39,7 +39,7 @@
 
                                        <div class="input-group-addon rounded-0"><i class="fa fa-key"></i></div>
 
-                                        <input type="password" class="form-control rounded-0" id="pwd" placeholder="Password">
+                                        <input type="password" class="form-control rounded-0" id="userloginpwd" name="userloginpwd" placeholder="Password">
 
                                    </div><!--end input group-->
                                 </div><!--end form group-->
@@ -53,9 +53,9 @@
 
                             <div class="btn-group" role="group">
                                 <button class="btn btn-primary btn-dark"><i class="fa fa-thumbs-o-up"></i></button>
-                                <button class="btn btn-primary rounded-0">
-                                Register With Todo
-                                </button>
+                                <a class="btn btn-primary rounded-0" href="views/signup.php">
+                                    Register With Todo
+                                </a>
                             </div><!--end btn group-->
                         </div><!--end left col-->
 
