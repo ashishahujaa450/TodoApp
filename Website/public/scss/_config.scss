@@ -1,0 +1,12 @@
+// define var (for instant change base and ui of webpage)
+
+$primary-color: #4680ff !default;
+$second-color: #FB617F !default;
+
+$black: #000 !default;
+$white: #fff !default;
+$gray: gray !default;
+
+$shadows-list: '2px 2px 24px 16px #0000001a';
+
+$shadow-1: unquote(nth($shadows-list, 1));
