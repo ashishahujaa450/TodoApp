@@ -20,6 +20,9 @@
 .content-block .col-6:first-child {
   border-right: 1px solid #cdcdcd;
 }
+.content-block hr {
+  border-top-width: 2px;
+}
 
 .login-form h3 {
   color: #4680ff;
@@ -52,6 +55,14 @@
 .todo-splash h5 {
   font-size: 1rem;
   color: gray;
+}
+
+.profile-header .font-1 {
+  color: #4680ff;
+  margin: 0px;
+}
+.profile-header img {
+  width: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
