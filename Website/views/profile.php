@@ -112,18 +112,14 @@
 
         <!--stop html struct finish here-->
         <!--stop html struct finish here-->
-
-
-<<<<<<< HEAD
-        <!--js for modal working-->
+	    
+	   <?php $loader->body_load(); ?>
+	    
+	     <!--js for modal working-->
        <script>
            $('#modal').on('shown.bs.modal', function () {
           $('#myInput').trigger('focus')
         })
        </script>
-
-=======
-	   <?php $loader->body_load(); ?>
->>>>>>> 00c92fd44ee5b6571d37fbf0056c984b1534f8e0
     </body>
 </html>
