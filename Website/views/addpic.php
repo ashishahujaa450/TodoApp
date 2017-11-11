@@ -38,43 +38,7 @@
                      <!--header content component end here(you can put these component according to your needs)-->
 
                     
-                    <!--add reminder content block-->
-                    <!--add reminder content block-->
-                    <div class="content-block row w-100 text-center justify-content-center py-5">
-                        <div class="col-12 login-form px-5">
-                            <h3 class="font-1">Todo App</h3>
-                            <hr>
-
-                            <form action="#" method="post">
-
-                                <div class="form-group mt-5">
-                                    <label for="title" class="sr-only">full name</label>
-                                   <div class="input-group mb-2">
-                                        <input type="text" class="form-control rounded-0" id="title" placeholder="Task Title">
-                                   </div><!--end input group-->
-                                </div><!--end form group-->
-
-                                <div class="form-group">
-                                    <textarea class="form-control rounded-0" id="description" rows="3" placeholder="description"></textarea>
-                                </div><!--end form group-->
-
-                                <div class="form-group">
-                                    <span class="mr-5">Task Priority</span>
-                                    <select class="custom-select my-3 rounded-0" required>
-                                        <option value="low">Lowest</option>
-                                        <option value="med">Medium</option>
-                                        <option value="high">Highest</option>
-                                    </select>
-                                </div><!--end form group-->
-
-                                <div class="form-group">                  
-                                    <button class="btn btn-primary rounded-0">
-                                        Done
-                                    </button>                             
-                                </div><!--end form group-->
-                            </form><!--end form-->                        
-                        </div><!--end left col-->
-                    </div><!--end content block-->
+                   
                 </div><!--end col sm6-->
             </div><!--end row-->
         </main><!--end main container-->
