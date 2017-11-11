@@ -1,7 +1,8 @@
 .custom-card {
+	@include border-radius(0);
+	
 	border: 0;
 	font-family: myfont;
-	border-radius: 0;
 	padding: 1rem 4rem;
 	text-align: left;
 	cursor: pointer;
