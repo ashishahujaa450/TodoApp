@@ -1,8 +1,3 @@
-<?php
-	require_once("../controller/attachments.php");
-	$loader = new Loader();
-?>
-
 <!doctype html>
 <html class="no-js">
     <head>

@@ -3,19 +3,35 @@
   src: url("../fonts/ScriptMTBold.ttf");
 }
 .btn-primary {
-  background: #4680ff;
   border-color: #4680ff;
+  -webkit-border-color: #4680ff;
+  -moz-border-color: #4680ff;
+  -ms-border-color: #4680ff;
+  -o-border-color: #4680ff;
+  background: #4680ff;
   cursor: pointer;
 }
 
 .btn-dark {
-  background: #0046df;
   border-color: #0046df;
-  border-radius: 0px;
+  -webkit-border-color: #0046df;
+  -moz-border-color: #0046df;
+  -ms-border-color: #0046df;
+  -o-border-color: #0046df;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background: #0046df;
 }
 
 .content-block {
   box-shadow: 2px 2px 15px 8px #0000001a;
+  -webkit-box-shadow: 2px 2px 15px 8px #0000001a;
+  -moz-box-shadow: 2px 2px 15px 8px #0000001a;
+  -ms-box-shadow: 2px 2px 15px 8px #0000001a;
+  -o-box-shadow: 2px 2px 15px 8px #0000001a;
 }
 .content-block .col-6:first-child {
   border-right: 1px solid #cdcdcd;
@@ -66,9 +82,13 @@
 }
 
 .custom-card {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border: 0;
   font-family: myfont;
-  border-radius: 0;
   padding: 1rem 4rem;
   text-align: left;
   cursor: pointer;

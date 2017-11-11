@@ -1,0 +1,23 @@
+@mixin box-shadow($shadow) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	-o-box-shadow: $shadow;	
+}
+
+@mixin border-color($color) {
+	border-color: $color;
+	-webkit-border-color: $color;
+	-moz-border-color: $color;
+	-ms-border-color: $color;
+	-o-border-color: $color;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+}

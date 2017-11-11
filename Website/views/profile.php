@@ -69,6 +69,7 @@
         <!--stop html struct finish here-->
         <!--stop html struct finish here-->
 
+
 	   <?php $loader->body_load(); ?>
     </body>
 </html>

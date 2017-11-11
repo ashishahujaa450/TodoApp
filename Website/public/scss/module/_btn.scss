@@ -1,11 +1,14 @@
 .btn-primary {
-	background: $primary-color;
-	border-color: $primary-color;
+	@include border-color($primary-color);
+
+	background: $primary-color;	
 	cursor: pointer;
 }
 
 .btn-dark {
+	$border-color: darken($primary-color, 20%);
+	@include border-color($border-color);
+	@include border-radius(0);
+
 	background: darken($primary-color, 20%);
-	border-color: darken($primary-color, 20%);
-	border-radius: 0px;
 }
