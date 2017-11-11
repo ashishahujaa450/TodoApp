@@ -34,7 +34,7 @@
                 <div class="col col-sm-7">
                     <div class="content-block w-100 my-5 row text-center">
                         <div class="col-6 login-form px-5 py-5">
-                            <h3>Todo App</h3>
+                            <h3 class="font-1">Todo App</h3>
 
                             <form action="#" method="post">
 
@@ -81,7 +81,7 @@
 
                         <div class="col-6 todo-splash py-5">
                             <img src="public/images/logo.png" alt="" class="img-fluid mb-3 mt-4 pt-5">
-                            <h5>Reminder For Work</h5>
+                            <h5 class="font-1">Reminder For Work</h5>
                         </div><!--end rigth col-->
                     </div><!--end content block-->
                 </div><!--end col sm6-->
