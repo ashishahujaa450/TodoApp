@@ -4,7 +4,7 @@ Setup database :
 2. Go to localhost/phpmyadmin
 3. Username: root
 4. Password:
-5. Go to import
+5.create database todo then goto import, Go to import
 6. choose file
 7. select todo.sql
 8. go
