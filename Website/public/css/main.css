@@ -65,4 +65,47 @@
   width: 30px;
 }
 
+.custom-card {
+  border: 0;
+  font-family: myfont;
+  border-radius: 0;
+  padding: 1rem 4rem;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.priority-1 {
+  background: #f59eb1;
+  border-left: 10px solid #f0617f;
+}
+.priority-1 h5 {
+  color: #f0617f;
+}
+
+.priority-2 {
+  background: #98b0db;
+  border-left: 10px solid #5577bb;
+}
+.priority-2 h5 {
+  color: #5577bb;
+}
+
+.priority-3 {
+  background: #fbd095;
+  border-left: 10px solid #fcb54e;
+}
+.priority-3 h5 {
+  color: #fcb54e;
+}
+
+#add {
+  color: #4680ff;
+  position: absolute;
+  top: -2rem;
+  cursor: pointer;
+  left: -5rem;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
