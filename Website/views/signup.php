@@ -1,25 +1,13 @@
+<?php
+	require_once("../controller/attachments.php");
+	$loader = new Loader();
+?>
+
 <!doctype html>
 <html class="no-js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Todo App | Signup</title>
-        <meta name="description" content="A reminder list management">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="manifest" href="site.webmanifest">
-        <!-- Place favicon.ico in the root directory -->
-		
-		<!-- external css libs -->
-        <link rel="stylesheet" href="../pulbic/css/normalize.css">
-        <link rel="stylesheet" href="../public/css/bootstrap.css">
-        <link rel="stylesheet" href="../public/css/font-awesome/css/font-awesome.css">
-		
-		<!-- custom styles -->
-        <link rel="stylesheet" href="../public/css/main.css">
-
-        <!-- external js libs -->
-        <script src="../public/js/jquery.js"></script>
+        <title>Todo App | Sign up</title>
+        <?php $loader->head_load(); ?>
     </head>
     <body>
        
@@ -111,7 +99,7 @@
         <!--stop html struct finish here-->
         <!--stop html struct finish here-->
 
-       <!-- custom js -->
-       <script src="../public/js/bootstrap.js" async="true"></script>
+       <?php $loader->body_load(); ?>
     </body>
 </html>
+   	 	
