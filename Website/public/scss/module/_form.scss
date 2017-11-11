@@ -4,6 +4,10 @@
 	.col-6:first-child {
 		border-right: 1px solid lighten($gray, 30%);
 	}
+
+	hr {
+		border-top-width: 2px;
+	}
 }
 
 .login-form {
@@ -41,5 +45,17 @@
 	h5 {
 		font-size: 1rem;
 		color: $gray;
+	}
+}
+
+.profile-header {
+	
+	.font-1 {
+		color: $primary-color;
+		margin: 0px;
+	}
+
+	img {
+		width: 30px;
 	}
 }
