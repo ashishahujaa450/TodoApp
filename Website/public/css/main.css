@@ -1,0 +1,57 @@
+@font-face {
+  font-family: myfont;
+  src: url("../fonts/ScriptMTBold.ttf");
+}
+.btn-primary {
+  background: #4680ff;
+  border-color: #4680ff;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: #0046df;
+  border-color: #0046df;
+  border-radius: 0px;
+}
+
+.content-block {
+  box-shadow: 2px 2px 15px 8px #0000001a;
+}
+.content-block .col-6:first-child {
+  border-right: 1px solid #cdcdcd;
+}
+
+.login-form h3 {
+  color: #4680ff;
+}
+
+#line {
+  border-top-width: 2px;
+  margin: 2rem 0rem;
+  position: relative;
+}
+#line::after {
+  content: "Or";
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+  padding: 2px;
+  color: gray;
+  margin: auto;
+  width: 40px;
+}
+
+.font-1 {
+  font-family: myfont;
+  font-size: 1.5rem;
+}
+
+.todo-splash h5 {
+  font-size: 1rem;
+  color: gray;
+}
+
+/*# sourceMappingURL=main.css.map */
