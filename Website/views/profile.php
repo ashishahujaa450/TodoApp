@@ -37,7 +37,7 @@
                         </div><!--end col 8-->
 
                         <div class="col-4">
-                            <p class="text-muted mb-0"><img src="<?php echo $PIC; ?>" alt="USER IMAGE"> Hi, <?php echo $NAME; ?> <a href="../controller/reqhandler.php?type=logout"><i class="fa fa-power-off"></i></a></p>
+                            <p class="text-muted mb-0"><img src="<?php echo $PIC; ?>" alt="USER IMAGE" style="width:150px;"> Hi, <?php echo $NAME; ?> <a href="../controller/reqhandler.php?type=logout"><i class="fa fa-power-off"></i></a></p>
                         </div><!--end col 4-->   
                     </div><!--end profile header block-->
 
