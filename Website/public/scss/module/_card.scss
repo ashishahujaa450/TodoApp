@@ -1,0 +1,31 @@
+.custom-card {
+	@include border-radius(0);
+	
+	border: 0;
+	font-family: myfont;
+	padding: 1rem 4rem;
+	text-align: left;
+	cursor: pointer;
+	margin-bottom: 1rem;
+}
+
+@each $color, $name, $darken in $card-colors {
+
+	.priority-#{$name} {
+		background: #{$color};
+		border-left: 10px solid #{$darken};
+
+		h5 {
+			color: #{$darken};
+		}
+	}
+}
+
+#add {
+	color: $primary-color;
+	position: absolute;
+	top: -2rem;
+	cursor: pointer;
+	left: -5rem;
+	font-size: 1rem;
+}

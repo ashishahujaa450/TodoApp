@@ -7,9 +7,13 @@ $black: #000 !default;
 $white: #fff !default;
 $gray: gray !default;
 
-$shadows-list: '2px 2px 15px 8px #0000001a';
+$shadows-list: '2px 2px 15px 8px #e8e8e8';
 
 $shadow-1: unquote(nth($shadows-list, 1));
+
+$card-colors: #f59eb1 1 #f0617f, #98b0db 2 #5577bb, #fbd095 3 #fcb54e; 
+
+
 
 @font-face {
 	font-family: myfont;

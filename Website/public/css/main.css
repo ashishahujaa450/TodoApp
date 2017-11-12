@@ -3,22 +3,41 @@
   src: url("../fonts/ScriptMTBold.ttf");
 }
 .btn-primary {
-  background: #4680ff;
   border-color: #4680ff;
+  -webkit-border-color: #4680ff;
+  -moz-border-color: #4680ff;
+  -ms-border-color: #4680ff;
+  -o-border-color: #4680ff;
+  background: #4680ff;
   cursor: pointer;
 }
 
 .btn-dark {
-  background: #0046df;
   border-color: #0046df;
-  border-radius: 0px;
+  -webkit-border-color: #0046df;
+  -moz-border-color: #0046df;
+  -ms-border-color: #0046df;
+  -o-border-color: #0046df;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background: #0046df;
 }
 
 .content-block {
-  box-shadow: 2px 2px 15px 8px #0000001a;
+  box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -webkit-box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -moz-box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -ms-box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -o-box-shadow: 2px 2px 15px 8px #e8e8e8;
 }
 .content-block .col-6:first-child {
   border-right: 1px solid #cdcdcd;
+}
+.content-block hr {
+  border-top-width: 2px;
 }
 
 .login-form h3 {
@@ -53,5 +72,65 @@
   font-size: 1rem;
   color: gray;
 }
+
+.profile-header .font-1 {
+  color: #4680ff;
+  margin: 0px;
+}
+.profile-header img {
+  width: 30px;
+}
+
+.custom-card {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: 0;
+  font-family: myfont;
+  padding: 1rem 4rem;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.priority-1 {
+  background: #f59eb1;
+  border-left: 10px solid #f0617f;
+}
+.priority-1 h5 {
+  color: #f0617f;
+}
+
+.priority-2 {
+  background: #98b0db;
+  border-left: 10px solid #5577bb;
+}
+.priority-2 h5 {
+  color: #5577bb;
+}
+
+.priority-3 {
+  background: #fbd095;
+  border-left: 10px solid #fcb54e;
+}
+.priority-3 h5 {
+  color: #fcb54e;
+}
+
+#add {
+  color: #4680ff;
+  position: absolute;
+  top: -2rem;
+  cursor: pointer;
+  left: -5rem;
+  font-size: 1rem;
+}
+
+/* helper classes */
+ .hide {
+   display: none;
+ }
 
 /*# sourceMappingURL=main.css.map */
