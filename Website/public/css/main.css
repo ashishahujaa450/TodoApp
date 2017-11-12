@@ -27,11 +27,11 @@
 }
 
 .content-block {
-  box-shadow: 2px 2px 15px 8px #0000001a;
-  -webkit-box-shadow: 2px 2px 15px 8px #0000001a;
-  -moz-box-shadow: 2px 2px 15px 8px #0000001a;
-  -ms-box-shadow: 2px 2px 15px 8px #0000001a;
-  -o-box-shadow: 2px 2px 15px 8px #0000001a;
+  box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -webkit-box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -moz-box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -ms-box-shadow: 2px 2px 15px 8px #e8e8e8;
+  -o-box-shadow: 2px 2px 15px 8px #e8e8e8;
 }
 .content-block .col-6:first-child {
   border-right: 1px solid #cdcdcd;
@@ -128,9 +128,9 @@
   font-size: 1rem;
 }
 
-/*// helper classes*/
-.hide {
-  display: none;
-}
+/* helper classes */
+ .hide {
+   display: none;
+ }
 
 /*# sourceMappingURL=main.css.map */
