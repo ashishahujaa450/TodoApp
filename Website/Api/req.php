@@ -5,6 +5,10 @@
 		check_login();
 	else if($_GET['type'] == 'reg' && !empty($_GET['type']) && isset($_GET['type']))
 		check_reg();
+	else if($_GET['type'] == 'addrem' && !empty($_GET['type']) && isset($_GET['type']))
+		add_rem();
+	else if($_GET['type'] == 'list' && !empty($_GET['type']) && isset($_GET['type']))
+		list_rem();
 
 
 	function check_login() {
@@ -56,8 +60,45 @@
 		}
 	}
 
-	function list_tasks() {
-		//
+	function add_rem() {
+		global $conn;
+
+		$uid = $_POST['id'];
+		$title = $_POST['title'];
+		$desc = $_POST['desc'];
+		$pri = $_POST['pri'];
+
+		$sql = "INSERT INTO `reminders`(`uid`,`title`,`descp`,`prio`) VALUES('${uid}','${title}','${desc}','${pri}')";
+
+		$res = mysqli_query($conn,$sql);
+
+		if($res) {
+			echo "1";
+		} else {
+			echo "2";
+		}
+	}
+
+	function list_rem() {
+		global $conn;
+
+		$uid = $_POST['id'];
+
+		$sql = "SELECT `title`,`descp`,`prio` FROM `reminders` WHERE `uid`= '${uid}'";
+		$array = array();
+
+		$rs = mysqli_query($conn,$sql);
+
+		if($rs) {
+			while(($row = mysqli_fetch_assoc($rs))) {
+				array_push($array,$row);
+			}	
+
+			echo json_encode($array);
+		} else {
+			echo json_encode($array);
+		}
+		
 	}
 
 ?>

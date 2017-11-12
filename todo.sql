@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2017 at 11:21 AM
+-- Generation Time: Nov 12, 2017 at 08:42 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `reminders` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(100) NOT NULL,
   `title` varchar(160) NOT NULL,
-  `desc` varchar(250) NOT NULL,
+  `descp` varchar(250) NOT NULL,
   `prio` int(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(160) NOT NULL,
   `password` varchar(100) NOT NULL,
   `mob` varchar(30) NOT NULL,
-  `pic_loc` varchar(260) NOT NULL,
+  `pic_loc` varchar(260) NOT NULL DEFAULT '../public/images/user.png',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 

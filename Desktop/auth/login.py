@@ -3,8 +3,8 @@ import urllib.parse as pr
 import json as js
 
 
-def check_status(data):
-    url = "http://127.0.0.1:80/learning/TodoApp/website/api/req.php?type=login"
+def check_status(data,url):
+    url += "login"
 
     par = pr.urlencode(data).encode("utf-8")
 

@@ -1,3 +1,5 @@
+url = "http://127.0.0.1:80"
+
 def login():
     from auth import login
 
@@ -9,7 +11,11 @@ def login():
         'ppass': passw
     }
 
-    login.check_status(data)
+    res = login.check_status(data,url)
+
+    from api import callfun
+
+    callfun.profile(res,url)
 
 
 def reg():
@@ -27,15 +33,28 @@ def reg():
         'pmob': mob
     }
 
-    signup.register(data)
+    signup.register(data,url)
 
 
-print("Enter choice\n1. login\n2. Register")
-res = int(input())
+def main():
+    global url
 
-if res == 1:
-    login()
-else:
-    reg()
+    with open("path.txt","r") as rf:
+        url += rf.readline()
+
+        url += "/api/req.php?type="
+
+    print("Enter choice\n1. login\n2. Register")
+    res = int(input())
+
+    if res == 1:
+        login()
+    else:
+        reg()
+
+if __name__ == '__main__':
+    main()
+
+
 
 

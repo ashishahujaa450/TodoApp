@@ -47,27 +47,41 @@
                     <div class="content-block row w-100 text-center justify-content-center py-5">
                         <div class="col-8">
                             <a href="#mymodal" data-toggle="modal"><i class="fa fa-plus" id="add"></i></a>
+                            
+                            <div id="render_outlet">
+                                <?php 
+                                    require_once("../model/db.php");
 
-                            <div class="card priority-1 custom-card">
-                                <div class="card-body">
-                                    <h5>Home Work</h5>
-                                    <p>Complete data structure to answer my team.</p>
-                                </div><!--end card body-->
-                            </div><!--end card-->
+                                    $sql = "SELECT * FROM `reminders` WHERE `uid` = '${ID}'";
 
-                            <div class="card priority-2 custom-card">
-                                <div class="card-body">
-                                    <h5>Happy bdy</h5>
-                                    <p>Coder bday is here don't forget to wish him on 2nd October.</p>
-                                </div><!--end card body-->
-                            </div><!--end card-->
+                                    $rs = mysqli_query($conn,$sql);
+                                    $html = array();
 
-                            <div class="card priority-3 custom-card">
-                                <div class="card-body">
-                                    <h5>Main work</h5>
-                                    <p>Let's complete the Todo project work given to me.</p>
-                                </div><!--end card body-->
-                            </div><!--end card-->
+                                    while(($row = mysqli_fetch_assoc($rs))) {
+                                        $title = $row['title'];
+                                        $desc = $row['descp'];
+                                        $pri = $row['prio'];
+                                        $cls = "";
+
+                                        if($pri == 1) 
+                                            $cls = "priority-1";
+                                        else if($pri == 2) 
+                                            $cls = "priority-2";
+                                        else
+                                            $cls = "priority-3";
+
+                                        $val = '<div class="card ' . $cls . ' custom-card"><div class="card-body"><h5>' . $title . '</h5><p>' . $desc . '</p></div></div>';
+
+                                        array_push($html, $val);
+                                    }
+
+                                    $html = array_reverse($html);
+
+                                    while(($item = array_shift($html))) {
+                                        echo $item;
+                                    }
+                                ?>
+                            </div>
                         </div><!--end col 8-->
                     </div><!--end content block-->
 
@@ -86,25 +100,25 @@
                                             <div class="form-group mt-5">
                                                 <label for="title" class="sr-only">full name</label>
                                                <div class="input-group mb-2">
-                                                    <input type="text" class="form-control rounded-0" id="title" placeholder="Task Title">
+                                                    <input type="text" class="form-control rounded-0" id="rtitle" placeholder="Task Title">
                                                </div><!--end input group-->
                                             </div><!--end form group-->
 
                                             <div class="form-group">
-                                                <textarea class="form-control rounded-0" id="description" rows="3" placeholder="description"></textarea>
+                                                <textarea class="form-control rounded-0" id="rdesc" rows="3" placeholder="description"></textarea>
                                             </div><!--end form group-->
 
                                             <div class="form-group">
                                                 <span class="mr-5">Task Priority</span>
-                                                <select class="custom-select my-3 rounded-0" required>
-                                                    <option value="low">Lowest</option>
-                                                    <option value="med">Medium</option>
-                                                    <option value="high">Highest</option>
+                                                <select class="custom-select my-3 rounded-0" required id="rprio">
+                                                    <option value="Lowest">Lowest</option>
+                                                    <option value="Medium">Medium</option>
+                                                    <option value="Highest">Highest</option>
                                                 </select>
                                             </div><!--end form group-->
 
                                             <div class="form-group">                  
-                                                <button class="btn btn-primary rounded-0" data-dismiss="modal">
+                                                <button class="btn btn-primary rounded-0" data-dismiss="modal" id="sendrembtn">
                                                     Done
                                                 </button>                             
                                             </div><!--end form group-->

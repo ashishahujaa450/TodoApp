@@ -2,11 +2,11 @@
 	require_once("controller/attachments.php");
 	$loader = new Loader();
 
-    if(!file_exists("../Desktop/path.txt")) {
-        $path = $_SERVER['SCRIPT_NAME'];
+    $filename = "../Desktop/path.txt";
+    unlink($filename);
+    $path = $_SERVER['SCRIPT_NAME'];
 
-        file_put_contents("../Desktop/path.txt",$path);
-    } 
+    file_put_contents($filename,substr($path,0,-10));
 ?>
 
 <!doctype html>
