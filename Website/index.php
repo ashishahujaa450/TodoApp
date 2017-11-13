@@ -1,6 +1,12 @@
 <?php
 	require_once("controller/attachments.php");
 	$loader = new Loader();
+
+    $filename = "../Desktop/path.txt";
+    unlink($filename);
+    $path = $_SERVER['SCRIPT_NAME'];
+
+    file_put_contents($filename,substr($path,0,-10));
 ?>
 
 <!doctype html>

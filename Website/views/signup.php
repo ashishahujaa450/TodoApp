@@ -1,14 +1,8 @@
 <?php 
-<<<<<<< HEAD
   require_once('../controller/attachments.php');
   $loader = new Loader();
 ?>
 
-=======
-	require_once('../controllers/attachments.php');
-	$loader = new Loader();
-?>
->>>>>>> f16827ac681bc3df66145607814308f79a59f310
 <!doctype html>
 <html class="no-js">
     <head>

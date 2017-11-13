@@ -86,4 +86,30 @@
     		header("location: ../index.php?logout=ok");
     	}
 	}
+
+	function add_rem() {
+		global $conn;
+
+		$uid = $_SESSION['user_d']['id'];
+		$title = $_GET['title'];
+		$desc = $_GET['desc'];
+		$pri = $_GET['pri'];
+
+		if($pri == "Lowest")
+			$pri = 3;
+		else if($pri == "Medium")
+			$pri = 2;
+		else
+			$pri = 1;
+
+		$sql = "INSERT INTO `reminders`(`uid`,`title`,`descp`,`prio`) VALUES('${uid}','${title}','${desc}','${pri}')";
+
+		$res = mysqli_query($conn,$sql);
+
+		if($res) {
+			echo "1";
+		} else {
+			echo "2";
+		}
+	}
 ?>
